@@ -44,6 +44,7 @@ So first thing..we need something that parses these VB6 structures and can tell 
 For this we can use a commercial app such as [vb-decompiler.org](https://www.vb-decompiler.org/) ($99 home/$230 business) or [VB-Reformer](https://qiil.io/VBReFormer.aspx) (free/$58 pro)  
   
 Free alternatives also exist. The formerly commercial, now open source [semi-vbdecompiler](https://github.com/VBGAMER45/Semi-VB-Decompiler) by vbgamer45 looks very cool. ([installer here](https://github.com/VBGAMER45/Semi-VB-Decompiler/raw/master/Semi%20VB%20Decompiler/SemiVBDecompilerInstall.exe))  
+[vb6decompiler](https://github.com/47Hunter47/vb6decompiler) is a newer free toolkit (MIT, Python, standard library only) aimed at the structure layer this page describes: the object table with entry points verified through the `MSVBVM60` prologue, `BSTR`/UTF-16 literals with SQL fragments stitched into statements, `.frm` design text, form geometry recovered from the binary blobs when no `.frm` survives, and `DataReport` layouts from the report DLLs. Every stage prints what it covered and what stayed open.  
   
 Also be sure to check out [p32dasm](http://progress-tools.x10.mx/p32dasm.html) and [racevb](http://www.racevb6.com/). For the sake of history you can also check out [exdec by Josephco](./files/betaexdec.zip) (possible [newer version here](./files/ExDec.zip))  
   
